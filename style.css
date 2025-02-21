@@ -1,0 +1,110 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f7f7;
+  color: #0f0f13;
+}
+ a{
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: #0e4b88; /* Establece un color azul para el enlace */
+  font-size: 18px; /* Establece el tamaño de la fuente */
+  font-weight: 100; /* Hace que el texto sea en negrita */
+  padding: 5px 10px; /* Agrega algo de espacio alrededor del enlace */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Estilo cuando el usuario pasa el mouse sobre el enlace */
+a:hover {
+  background-color: #0d7a7a; /* Cambia el fondo a un tono más oscuro */
+  color: #fff; /* Cambia el color del texto a blanco */
+}
+
+/* Estilo cuando el enlace ya ha sido visitado */
+a:visited {
+  color: #010b0f; /* Cambia el color después de visitar el enlace */
+}
+
+/* Estilo cuando el enlace tiene el foco (por ejemplo, al hacer clic o al navegar con el teclado) */
+a:focus {
+  outline: 2px solid #f30606; /* Resalta el enlace con un borde verde */
+}
+
+.proyectos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.proyectos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.proyecto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 250px;
+}
+
+.proyecto img {
+  margin-top: 5%; /* Baja la imagen 20px */
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+table {
+  width: 100%;
+  margin-top: 15%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+  width: 40%;
+}
+
+td {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 140px;
+
+}
+
+tr:nth-child(even) td {
+  background-color: #dce6f1;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
