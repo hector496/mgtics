@@ -127,3 +127,11 @@ header{
     color:white;
     cursor: pointer;
 }
+@media (max-width:768px){
+body{
+  background-color : red;
+}
+a{
+  display: none;
+}
+}
